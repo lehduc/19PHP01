@@ -1,0 +1,94 @@
+*{
+ margin: 0px,auto;
+ padding: 0px;   
+}
+#body {
+    font-family: arial sans-serif;
+    font-size: 13px;
+    box-sizing: border-box;
+    }
+#wrapper
+    {
+        margin: auto;
+        height: auto;
+        overflow: hidden;
+        width: 100%;
+    }
+#wrapper #top
+    {
+        
+        height: 200px;
+        width: 90%;
+        background:rgb(220, 228, 148);
+        /* padding: 10px; */
+        margin-left: 200px;
+    } 
+img {
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    width: 170px;
+    height: 170px;
+    float: right;
+    margin-top: 15px;
+    margin-right: 100px;
+    }
+#top #ten
+{
+    margin-top: 20px;
+}
+#top .thongtin
+{
+     margin-left: 200px; 
+    
+}
+#wrapper #left
+    {
+        height: 500px;
+        width: 300px;
+        background: rgb(148, 203, 228);
+        padding: 10px;
+        float: left;
+        margin-left: 200px;
+    }
+.tieude
+{
+    color: red;
+}
+#wrapper #between
+    { 
+        height: 500px;
+        width: 300px;
+        background: rgb(168, 221, 172);
+        padding: 10px;
+        float: left;
+    }
+#wrapper #right
+    {
+        margin-top: 0px;
+        height: 500px;
+        width: 300px;
+        background: rgb(219, 151, 199);
+        padding: 10px; 
+        float: left;
+    }
+    #wrapper #footer
+    {
+        /*margin-top: 0px;*/
+        height: 100px;
+        width: 940px;
+        background: rgb(220, 228, 148);
+        padding: 10px;
+        float: left;
+        margin-left: 200px;
+    }
+#footer .ft1
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#footer .ft2
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
