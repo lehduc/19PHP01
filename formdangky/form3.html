@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"> 
+	<link rel="stylesheet" href="form3.css">
+	<title><form action=""></form></title>
+</head>
+<body>
+<div class="container-form">
+		<div class="thongtin">form tiền điện</div>
+		<form class="form00"  action="#" name="form2">
+			<div class="formleft">
+				<div class="email">
+					<label>Họ và tên </label><br/>
+					<input id="fullname" type="text" name="fullname" placeholder="Họ Tên" onblur = "nhapten()" required><br/>
+					<span id ="span1"></span>
+				</div>
+				<div class="email">
+					<label>Số điện thoại</label><br/>
+					<input id ="phonenumber" type="text" name="phonenumber" placeholder="Xin vui lòng điền số điện thoại của bạn" onblur="nhapso()" required><br/>
+					<span id ="span2"></span>
+				</div>
+				<div class="email">
+					<label>số đầu kỳ</label><br/>
+					<input id = "sodauky" type="text" name="sodauky" placeholder="Nhập số đầu kỳ..." onblur = "nhapsodauky()" required><br/>
+					<span id ="span3"></span>
+				</div>
+				<div class="email">
+					<label>Số cuối kỳ</label><br/>
+					<input id = "socuoiky" type="text" name="socuoiky" placeholder="nhập số cuối kỳ..." onblur = "nhapsocuoiky()" required><br/>
+					<span id ="span4"></span>
+				</div>
+			</div>
+			<div class="formright">
+				<div class="email">
+					<label>Địa chỉ: </label><br/>
+					<input id = "diachi" type="text" name="diachi" placeholder="Vui lòng nhập địa chỉ của bạn" onblur = "nhapdiachi()" required><br/>
+					<span id ="span5"></span>
+				</div>
+				<div class="email">
+					<label>Ngày đầu kỳ: </label><br/>
+					<input type="date" name="ngaydauky" id="ngaydauky" required>
+				</div>
+				<div class="email">
+					<label>Ngày cuối kỳ</label><br/>
+					<input type="date" name="ngaycuoiky" required onblur="ngaythang()">
+				</div>
+				<div class="email">
+					<label>Ghi chú</label><br/>
+					<input type="text" name="ghichu" placeholder="Nhập ghi chú">
+				</div>
+			</div>
+			<div class="form3">
+				<input id="submit" type="submit" name="submit" value="Submit" onclick="tinhtien()">
+			</div>
+		</form>
+	</div>
+	
+	<script>
+	//Nhập tên
+		function nhapten(){
+			var ten = document.getElementById("fullname").value.length;
+			if (ten == 0){
+				document.getElementById("span1").innerHTML = "Tên không được để trông!!!";
+			}else{
+				document.getElementById("span1").innerHTML = "";
+			}
+		}
+	//Nhập số điện thoại
+		function nhapso(){
+			var phonenumber = document.getElementById("phonenumber").value;
+			if (phonenumber.length == 0){
+				document.getElementById("span2").innerHTML = "SĐT không được để trông!!!";
+			}else{
+				document.getElementById("span2").innerHTML = "";
+			}
+		}		
+	//Nhập số đầu kỳ
+		function nhapsodauky(){
+			var sothue = document.getElementById("sodauky").value.length;
+			if (sothue == 0){
+				document.getElementById("span3").innerHTML = "Số đầu kỳ không được để trống";
+			}else{
+				document.getElementById("span3").innerHTML = "";
+			}
+		}
+		//Nhập số cuối kỳ
+		function nhapsocuoiky(){
+			var nhapsocuoiky = document.getElementById("socuoiky").value.length;
+			if(nhapemail == 0){
+				document.getElementById("span4").innerHTML = "Số cuối kỳ không được để trống!!!";
+			}else{
+				document.getElementById("span4").innerHTML = "";
+			}
+		}	
+	//Nhập địa chỉ
+		function nhapdiachi(){
+			var diachi = document.getElementById("diachi").value.length;
+			if (diachi == 0){
+				document.getElementById("span5").innerHTML = "Địa chỉ không được để trống!!!";
+			}else{
+				document.getElementById("span5").innerHTML = "";
+			}
+		}
+	</script>
+	<script type="text/javascript" src="jquery-3.4.0.min.js"></script>
+	<script type="text/javascript" src="form3.js"></script>
+	</body>
+	</html>

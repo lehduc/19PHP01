@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+form{
+    box-sizing: border-box;
+    width: 300px;
+    height: 900px;
+    margin: 100px auto 0;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+    padding-bottom: 40px;
+    border-radius: 3px;
+}
+fieldset{
+    height: 900px;
+    width: 300px;
+}
+.form101{
+    height: 30px;
+    width: 50px;
+}
+label{
+    float: left;
+    width: 100px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+input{
+    margin-bottom: 5px;
+    font-size: 18px;
+    width: 200px;
+    height: 40px;
+    margin-top: 30px;
+    border: 1px solid rgb(221, 221, 221);
+    float: left;
+}
+
+.error{
+    color: red;
+}
+button{
+    left: 30px;
+}

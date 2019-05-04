@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="form2.css">
+</head>
+<body>
+    <form class="form"  action="#" name="form2">
+        <div id="formleft">
+                <div class="email">
+                        <label>Địa chỉ email</label><br/>
+                        <input id = "email" type="text" name="email" placeholder="Vui lòng nhập email của bạn" onblur = "nhapemail()"><br/>
+                        <span id ="span0"></span>
+                </div>
+                <div class="email">
+                        <label>Tên</label><br/>
+                        <input id="username" type="text" name="username" placeholder="Vui lòng nhập họ tên bạn" onblur = "nhapten()"><br/>
+                        <span id ="span1"></span>
+                </div>
+                <div class="email">
+                        <label>Số điện thoại</label><br/>
+                        <input id ="sodienthoai" type="text" name="sodienthoai" placeholder="Xin vui lòng điền số điện thoại của bạn" onblur="nhapso()"><br/>
+                        <span id ="span2"></span>
+                </div>
+                <div class="email">
+                        <label>Mã số thuế</label><br/>
+                        <input id = "sothue" type="text" name="masothue" placeholder="Nhập mã số thuế của bạn" onblur = "nhapsothue()"><br/>
+                        <span id ="span3"></span>
+                </div>
+                <div class="email">
+                        <label>Tỉnh/Thành phố</label><br/>
+                        <input type="text" name="tinhthanh" id="tp/tinh" placeholder="Vui lòng chọn Tỉnh/Thành" onblur="nhaptinh()"><br>
+                        <span id ="span4"></span>
+                </div>
+                <div class="email">
+                        <label>Quận/Huyện</label><br/>
+                        <input id="huyen" type="text" name="quanhuyen" placeholder="Vui lòng nhập Quận/Huyện" onblur="nhaphuyen()"><br>
+                        <span id ="span5"></span>
+                </div>
+                <div class="email">
+                        <label>Phường/Xã</label><br/>
+                        <input id="xa" type="text" name="phuongxa" placeholder="Vui lòng nhập Phường/Xã" onblur="nhapxa()"><br>
+                        <span id ="span6"></span>
+                </div>
+        </div>
+        <div class="form3">
+                <input type="submit" name="dangky" value="Đăng ký">
+        </div>
+</form>
+<script type="text/javascript" src="jquery-3.4.0.min.js"></script>
+<script type="text/javascript" src="jquery.validate.min.js"></script>
+<script type="text/javascript" src="form2.js"></script>
+</body>
+</html>
